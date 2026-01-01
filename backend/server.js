@@ -5,7 +5,7 @@ import cloudinary from "cloudinary"
 import cors from "cors"
 
 import authRoute from"./routes/auth.route.js"
-import connectDB from "./db/connectDb.js";
+import connectDB from "./db/connectDB.js";
 import userRoute from "./routes/user.route.js"
 import postRoute from "./routes/post.route.js"
 import notificationRoute from "./routes/notification.route.js"
@@ -53,4 +53,5 @@ app.get("/",(req,res)=>{
 app.listen(PORT,()=>{
     console.log("server running" + PORT)
     connectDB();
+
 })
